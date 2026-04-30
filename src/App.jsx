@@ -4,6 +4,9 @@ import viteLogo from './assets/vite.svg'
 import heroImg from './assets/hero.png'
 import './App.css'
 
+import { FoodCard } from './components/FoodCard.jsx'
+import { FoodBadge } from './components/FoodBadge.jsx'
+
 function App() {
   const [count, setCount] = useState(0)
 
@@ -21,6 +24,15 @@ function App() {
             Edit <code>src/App.jsx</code> and save to test <code>HMR</code>
           </p>
         </div>
+
+        <FoodBadge label="Favorite Food Alert" />
+        <FoodCard
+          name="Chicken Biriyani"
+          origin="Kerala, India"
+          description="Fragrant basmati rice layered with flavoured chicken — slow-cooked to aromatic perfection."
+          rating={5}
+        />
+
         <button
           type="button"
           className="counter"
