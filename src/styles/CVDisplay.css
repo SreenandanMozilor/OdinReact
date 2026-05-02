@@ -1,0 +1,140 @@
+.cv-document {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 48px;
+  background: #fff;
+  color: #1a1a1a;
+  font-family: 'Georgia', serif;
+  line-height: 1.6;
+}
+
+/* Header */
+.cv-header {
+  border-bottom: 2px solid #1a1a1a;
+  padding-bottom: 20px;
+  margin-bottom: 32px;
+  text-align: center;
+}
+
+.cv-name {
+  font-size: 36px;
+  font-weight: 700;
+  margin: 0 0 10px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #1a1a1a;
+}
+
+.cv-contact {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  font-size: 14px;
+  color: #555;
+}
+
+.cv-contact span::before {
+  content: '';
+}
+
+.cv-contact span + span::before {
+  content: '·';
+  margin-right: 24px;
+}
+
+/* Sections */
+.cv-section {
+  margin-bottom: 32px;
+}
+
+.cv-section-title {
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #888;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 6px;
+  margin: 0 0 16px;
+}
+
+/* Entries */
+.cv-entry {
+  margin-bottom: 16px;
+}
+
+.cv-entry-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.cv-entry-title {
+  font-size: 16px;
+  font-weight: 700;
+  color: #1a1a1a;
+}
+
+.cv-entry-date {
+  font-size: 13px;
+  color: #888;
+}
+
+.cv-entry-subtitle {
+  font-size: 14px;
+  color: #555;
+  margin-top: 2px;
+  font-style: italic;
+}
+
+.cv-entry-body {
+  font-size: 14px;
+  color: #333;
+  margin-top: 6px;
+}
+
+.cv-entry-link {
+  font-size: 13px;
+  color: #0066cc;
+  margin-top: 4px;
+}
+
+/* Back button */
+.cv-edit-btn {
+  margin-top: 40px;
+  padding: 10px 20px;
+  background: none;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  color: #555;
+}
+
+.cv-edit-btn:hover {
+  background: #f5f5f5;
+}
+
+/* Generate button in App */
+.generate-btn {
+  padding: 14px 28px;
+  background: #fc5b7e;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  align-self: center;
+  transition: background 0.2s, opacity 0.2s;
+}
+
+.generate-btn:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+  background: #888;
+}
+
+.generate-btn:not(:disabled):hover {
+  background: #c084fc;
+}
